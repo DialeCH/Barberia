@@ -1,4 +1,4 @@
-# Barbería Web App 💈
+# Barbería Web App 💈 En Progreso
 
 Sistema de gestión de citas para una barbería.  
 Permite a los clientes reservar citas, ver disponibilidad y a los barberos administrar su agenda.
