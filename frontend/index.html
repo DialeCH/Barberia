@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BarberShop</title>
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous" />
+    </head>
+    <body>
+        <!-- Header -->
+
+        <header class="d-flex justify-content-between align-items-center p-3 fixed-top bg-black">
+            <!-- Logo -->
+            <div class="d-flex align-items-center gap-2" id="logo">
+                <a href="#inicio" class="d-flex align-items-center gap-2 text-decoration-none text-white">
+                    <i class="fa-light fa-scissors fa-xl text-warning"></i>
+                    <span class="m-0 fs-2 fw-bold">BarberShop</span>
+                </a>
+            </div>
+            <!-- Nav -->
+            <nav class="nav text-white">
+                <a href="#hero" class="nav-link">Inicio</a>
+                <a href="#services" class="nav-link">Servicios</a>
+                <a href="#gallery" class="nav-link">Galeria</a>
+                <a href="#team" class="nav-link">Equipo</a>
+                <a href="#contact" class="nav-link">Contacto</a>
+                <a href="#contact" class="btn btn-warning rounded">Reservar</a>
+            </nav>
+        </header>
+        <main>
+            <!-- Hero -->
+
+            <section class="hero bg-dark d-flex position-relative align-items-center" id="hero">
+                <img
+                    src="https://images.unsplash.com/photo-1759134198561-e2041049419c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiYXJiZXIlMjBzaG9wJTIwaW50ZXJpb3IlMjBtb2Rlcm58ZW58MXx8fHwxNzcwMjg2NTI3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                    alt="Barberia hero"
+                    class="hero-img opacity-50" />
+                <div class="hero-content container w-50">
+                    <span class="text-white fw-bold fs-1">Tu Estilo, Nuestra Pasión</span>
+                    <p>Barbería tradicional con técnicas modernas. Más de 20 años de experiencia en el arte del corte y el afeitado.</p>
+                    <button onclick="location.href = '#contact'" class="btn btn-warning">Reserva tu cita</button>
+                </div>
+            </section>
+
+            <!-- Servicios -->
+
+            <section class="services" id="services">
+                <h2>Nuestros Servicios</h2>
+                <div class="service-item">
+                    <h3>Corte de cabello</h3>
+                    <p>Desde estilos clásicos hasta modernos, nuestros barberos expertos te brindarán el corte perfecto.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Afeitado tradicional</h3>
+                    <p>Disfruta de un afeitado suave y preciso con nuestras técnicas tradicionales y productos de alta calidad.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Arreglo de barba</h3>
+                    <p>Mantén tu barba impecable con nuestros servicios de arreglo y cuidado personalizados.</p>
+                </div>
+            </section>
+
+            <!-- Galeria -->
+
+            <section class="gallery" id="gallery">
+                <h2>Galería</h2>
+                <div class="gallery-item">
+                    <img src="corte1.jpg" alt="Corte de cabello 1" />
+                </div>
+                <div class="gallery-item">
+                    <img src="corte2.jpg" alt="Corte de cabello 2" />
+                </div>
+                <div class="gallery-item">
+                    <img src="afeitado.jpg" alt="Afeitado tradicional" />
+                </div>
+            </section>
+
+            <!-- Equipo -->
+
+            <section class="team" id="team">
+                <h2>Nuestro equipo</h2>
+                <p>Profesionales apasionados dedicados a brindarte el mejor servicio</p>
+                <div class="team-member">
+                    <img src="barbero1.jpg" alt="Barbero 1" />
+                    <h3>Juan Pérez</h3>
+                    <p>Especialista en cortes modernos y afeitados clásicos.</p>
+                </div>
+                <div class="team-member">
+                    <img src="barbero2.jpg" alt="Barbero 2" />
+                    <h3>María Gómez</h3>
+                    <p>Experta en cuidado de barba y estilos personalizados.</p>
+                </div>
+            </section>
+
+            <!-- Contacto -->
+
+            <section class="contact" id="contact">
+                <h2>Contáctanos</h2>
+                <p>Reserva tu cita o visítanos sin compromiso</p>
+                <div class="">
+                    <div class="">
+                        <img src="" alt="" />
+                        <div class="">
+                            <h2>Información de Contacto</h2>
+                            <div class="">
+                                <h3>Direccion</h3>
+                                <p>Calle Falsa 123, Ciudad, País</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <img src="" alt="" />
+                        <div class="">
+                            <h2>Teléfono</h2>
+                            <div class="">
+                                <h3>Teléfono</h3>
+                                <p>+57 300 123 4567</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <img src="" alt="" />
+                        <div class="">
+                            <h2>Email</h2>
+                            <div class="">
+                                <h3>Email</h3>
+                                <p>info@barbershop.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <img src="" alt="" />
+                        <div class="">
+                            <h2>Horario</h2>
+                            <div class="">
+                                <h3>Horario</h3>
+                                <p>Lunes a Viernes: 9:00 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form>
+                        <input type="text" placeholder="Nombre" required />
+                        <input type="email" placeholder="Correo electrónico" required />
+                        <input type="number" placeholder="Teléfono" required />
+                        <select name="servicio" id="servicio" required>
+                            <option value="" disabled selected>Selecciona un servicio</option>
+                            <option value="corte">Corte de cabello</option>
+                            <option value="afeitado">Afeitado tradicional</option>
+                            <option value="arreglo">Arreglo de barba</option>
+                        </select>
+                        <input type="datetime-local" required />
+                        <textarea placeholder="Mensaje"></textarea>
+                        <button type="submit">Confirmar Reserva</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+
+        <footer>
+            <div class="footer-content">
+                <div>
+                    <h2>BarberShop</h2>
+                    <p>Tu barbería de confianza desde 2004. Tradición y modernidad en cada corte.</p>
+                </div>
+                <div class="nav-footer">
+                    <h3>Enlaces Rápidos</h3>
+                    <a href="#">Inicio</a>
+                    <a href="#">Servicios</a>
+                    <a href="#">Galería</a>
+                    <a href="#">Equipo</a>
+                    <a href="#">Contacto</a>
+                </div>
+                <div class="social-media">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter" /></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 BarberShop. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/da45bc1279.js" crossorigin="anonymous"></script>
+    </body>
+</html>
