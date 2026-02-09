@@ -11,10 +11,6 @@ body {
 section {
     margin-bottom: 40px;
 }
-section h2 {
-    margin-bottom: 20px;
-    color: #ff5722;
-}
 
 /* Navbar */
 nav .nav-link {
@@ -24,27 +20,8 @@ nav .nav-link {
 /* Hero */
 
 .hero {
-    position: relative;
-    width: 100%;
     height: 100vh; /* ocupa toda la altura de la pantalla */
     overflow: hidden;
-}
-
-.hero-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* ajusta la imagen sin deformarla */
-    z-index: 1;
-}
-
-.hero-content {
-    position: relative;
-    color: white;
-    text-align: center;
-    z-index: 2;
 }
 
 form {

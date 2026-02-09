@@ -38,12 +38,12 @@
         <main>
             <!-- Hero -->
 
-            <section class="hero bg-dark d-flex position-relative align-items-center" id="hero">
+            <section class="hero w-100 bg-dark d-flex position-relative align-items-center" id="hero">
                 <img
                     src="https://images.unsplash.com/photo-1759134198561-e2041049419c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiYXJiZXIlMjBzaG9wJTIwaW50ZXJpb3IlMjBtb2Rlcm58ZW58MXx8fHwxNzcwMjg2NTI3fDA&ixlib=rb-4.1.0&q=80&w=1080"
                     alt="Barberia hero"
-                    class="hero-img opacity-50" />
-                <div class="hero-content container w-50">
+                    class="opacity-50 position-absolute top-0 start-0 w-100 h-100 object-fit-cover" />
+                <div class="hero-content container w-50 text-center position-relative z-2 text-white">
                     <span class="text-white fw-bold fs-1">Tu Estilo, Nuestra Pasión</span>
                     <p>Barbería tradicional con técnicas modernas. Más de 20 años de experiencia en el arte del corte y el afeitado.</p>
                     <button onclick="location.href = '#contact'" class="btn btn-warning">Reserva tu cita</button>
@@ -52,19 +52,59 @@
 
             <!-- Servicios -->
 
-            <section class="services" id="services">
-                <h2>Nuestros Servicios</h2>
-                <div class="service-item">
-                    <h3>Corte de cabello</h3>
-                    <p>Desde estilos clásicos hasta modernos, nuestros barberos expertos te brindarán el corte perfecto.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Afeitado tradicional</h3>
-                    <p>Disfruta de un afeitado suave y preciso con nuestras técnicas tradicionales y productos de alta calidad.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Arreglo de barba</h3>
-                    <p>Mantén tu barba impecable con nuestros servicios de arreglo y cuidado personalizados.</p>
+            <section class="services d-flex flex-column align-items-center" id="services">
+                <h2 class="fw-bold fs-1">Nuestros Servicios</h2>
+                <p class="fs-6">Ofrecemos una amplia gama de servicios profesionales para que luzcas impecable</p>
+                <div class="container my-4">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="card shadow px-3 pb-5 border-0 h-100">
+                                <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle mx-3 mb-2 mt-4" style="width: 60px; height: 60px">
+                                    <i class="fa-regular fa-scissors fa-xl"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Corte de cabello</h3>
+                                    <p class="card-text py-3">Cortes clásicos y modernos adaptados a tu estilo personal.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="card shadow px-3 pb-5 border-0 h-100">
+                                <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle mx-3 mb-2 mt-4" style="width: 60px; height: 60px">
+                                    <i class="fa-regular fa-wind fa-xl"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Afeitado tradicional</h3>
+                                    <p class="card-text py-3">Experiencia de afeitado con navaja y toallas calientes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="card shadow px-3 pb-5 border-0 h-100">
+                                <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle mx-3 mb-2 mt-4" style="width: 60px; height: 60px">
+                                    <i class="fa-regular fa-sparkles fa-xl"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Arreglo de barba</h3>
+                                    <p class="card-text py-3">Perfilado y mantenimiento profesional de barba.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="card shadow px-3 pb-5 border-0 h-100">
+                                <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle mx-3 mb-2 mt-4" style="width: 60px; height: 60px">
+                                    <i class="fa-regular fa-water fa-xl"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Tratamiento Capilar</h3>
+                                    <p class="card-text py-3">Tratamientos especializados para el cuidado del cabello.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
