@@ -12,6 +12,12 @@ section {
     margin-bottom: 40px;
 }
 
+/* Colores */
+
+.text-gray {
+    color: #d1d5dc !important;
+}
+
 /* Navbar */
 nav .nav-link {
     color: #fff;
@@ -37,14 +43,78 @@ form textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-form button {
-    background-color: #ff5722;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+/* Servicios */
+
+.services {
+    background-color: #fafafa;
 }
-form button:hover {
-    background-color: #e64a19;
+
+.service-card {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Galeria */
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 0.5rem; /* mismo radio que la card */
+}
+
+.gallery-item img {
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05); /* zoom */
+}
+
+.gallery-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* oscurece */
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: inherit; /* hereda el radio */
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1; /* aparece la capa oscura */
+}
+
+/* Equipo */
+
+.team-member {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    background-color: #27272a !important;
+}
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+
+footer {
+    background-color: #18181b;
+}
+.icon-container {
+    background-color: #27272a;
+}
+.icon-container:hover {
+    background-color: #ffca2c;
+}
+.copyright {
+    border-top: 1px solid #333333bd;
 }

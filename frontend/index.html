@@ -16,23 +16,44 @@
     </head>
     <body>
         <!-- Header -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a href="#hero" class="navbar-brand d-flex align-items-center gap-2 text-white">
+                        <i class="fa-light fa-scissors fa-xl text-warning"></i>
+                        <span class="fs-2 fw-bold">BarberShop</span>
+                    </a>
 
-        <header class="d-flex justify-content-between align-items-center p-3 fixed-top bg-black">
-            <!-- Logo -->
-            <div class="d-flex align-items-center gap-2" id="logo">
-                <a href="#inicio" class="d-flex align-items-center gap-2 text-decoration-none text-white">
-                    <i class="fa-light fa-scissors fa-xl text-warning"></i>
-                    <span class="m-0 fs-2 fw-bold">BarberShop</span>
-                </a>
-            </div>
-            <!-- Nav -->
-            <nav class="nav text-white">
-                <a href="#hero" class="nav-link">Inicio</a>
-                <a href="#services" class="nav-link">Servicios</a>
-                <a href="#gallery" class="nav-link">Galeria</a>
-                <a href="#team" class="nav-link">Equipo</a>
-                <a href="#contact" class="nav-link">Contacto</a>
-                <a href="#contact" class="btn btn-warning rounded">Reservar</a>
+                    <!-- Botón hamburguesa -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Menú -->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav align-items-lg-center gap-lg-3 text-center">
+                            <li class="nav-item">
+                                <a href="#hero" class="nav-link">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#services" class="nav-link">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#gallery" class="nav-link">Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#team" class="nav-link">Equipo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="btn btn-warning rounded">Reservar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
         <main>
@@ -54,11 +75,11 @@
 
             <section class="services d-flex flex-column align-items-center" id="services">
                 <h2 class="fw-bold fs-1">Nuestros Servicios</h2>
-                <p class="fs-6">Ofrecemos una amplia gama de servicios profesionales para que luzcas impecable</p>
+                <p class="fs-6 w-75 text-center">Ofrecemos una amplia gama de servicios profesionales para que luzcas impecable</p>
                 <div class="container my-4">
                     <div class="row g-4 justify-content-center">
                         <div class="col-12 col-sm-6 col-lg-3">
-                            <div class="card shadow px-3 pb-5 border-0 h-100">
+                            <div class="card shadow px-3 pb-5 border-0 h-100 service-card">
                                 <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle mx-3 mb-2 mt-4" style="width: 60px; height: 60px">
                                     <i class="fa-regular fa-scissors fa-xl"></i>
                                 </div>
@@ -70,7 +91,7 @@
                         </div>
 
                         <div class="col-12 col-sm-6 col-lg-3">
-                            <div class="card shadow px-3 pb-5 border-0 h-100">
+                            <div class="card shadow px-3 pb-5 border-0 h-100 service-card">
                                 <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle mx-3 mb-2 mt-4" style="width: 60px; height: 60px">
                                     <i class="fa-regular fa-wind fa-xl"></i>
                                 </div>
@@ -82,7 +103,7 @@
                         </div>
 
                         <div class="col-12 col-sm-6 col-lg-3">
-                            <div class="card shadow px-3 pb-5 border-0 h-100">
+                            <div class="card shadow px-3 pb-5 border-0 h-100 service-card">
                                 <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle mx-3 mb-2 mt-4" style="width: 60px; height: 60px">
                                     <i class="fa-regular fa-sparkles fa-xl"></i>
                                 </div>
@@ -94,7 +115,7 @@
                         </div>
 
                         <div class="col-12 col-sm-6 col-lg-3">
-                            <div class="card shadow px-3 pb-5 border-0 h-100">
+                            <div class="card shadow px-3 pb-5 border-0 h-100 service-card">
                                 <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle mx-3 mb-2 mt-4" style="width: 60px; height: 60px">
                                     <i class="fa-regular fa-water fa-xl"></i>
                                 </div>
@@ -110,124 +131,262 @@
 
             <!-- Galeria -->
 
-            <section class="gallery" id="gallery">
-                <h2>Galería</h2>
-                <div class="gallery-item">
-                    <img src="corte1.jpg" alt="Corte de cabello 1" />
-                </div>
-                <div class="gallery-item">
-                    <img src="corte2.jpg" alt="Corte de cabello 2" />
-                </div>
-                <div class="gallery-item">
-                    <img src="afeitado.jpg" alt="Afeitado tradicional" />
+            <section class="gallery d-flex flex-column align-items-center" id="gallery">
+                <h2 class="fw-bold fs-1">Galería</h2>
+                <p class="fs-6 w-75 text-center">Explora nuestro trabajo y el ambiente de nuestra barbería</p>
+                <div class="container">
+                    <div class="row g-4 justify-content-center">
+                        <!-- Imagen 1 -->
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="card bg-dark text-white border-0">
+                                <div class="gallery-item position-relative">
+                                    <img
+                                        src="https://www.carloscondepeluqueros.com/wp-content/uploads/2019/01/cabecera-barbero-profesional.jpg"
+                                        class="card-img object-fit-cover"
+                                        style="height: 250px"
+                                        alt="Corte de cabello 1" />
+                                    <!-- Overlay oscuro con texto -->
+                                    <div class="overlay d-flex align-items-center justify-content-center">
+                                        <span class="card-title">Corte de cabello moderno</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Imagen 2 -->
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="card bg-dark text-white border-0">
+                                <div class="gallery-item position-relative">
+                                    <img
+                                        src="https://sedivina.com.mx/wp-content/uploads/2024/12/rituales-barberos-turcos-particularmente-populares.jpg"
+                                        class="card-img object-fit-cover"
+                                        style="height: 250px"
+                                        alt="Corte de cabello 2" />
+                                    <!-- Overlay oscuro con texto -->
+                                    <div class="overlay d-flex align-items-center justify-content-center">
+                                        <span class="card-title">Corte de cabello tradicional</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Imagen 3 -->
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="card bg-dark text-white border-0">
+                                <div class="gallery-item position-relative">
+                                    <img
+                                        src="https://uncoverspa.com.co/wp-content/uploads/Arreglo-de-Barba-scaled.jpg"
+                                        class="card-img object-fit-cover"
+                                        style="height: 250px"
+                                        alt="Afeitado tradicional" />
+                                    <!-- Overlay oscuro con texto -->
+                                    <div class="overlay d-flex align-items-center justify-content-center">
+                                        <span class="card-title">Afeitado tradicional</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Imagen 4 -->
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="card bg-dark text-white border-0">
+                                <div class="gallery-item position-relative">
+                                    <img
+                                        src="https://www.elivelimen.com/blog/wp-content/uploads/2020/03/muselines-eliveli-men-peluqueria-barberia-donostia-068-1024x683.jpg"
+                                        class="card-img object-fit-cover"
+                                        style="height: 250px"
+                                        alt="Arreglo de barba" />
+                                    <!-- Overlay oscuro con texto -->
+                                    <div class="overlay d-flex align-items-center justify-content-center">
+                                        <span class="card-title">Arreglo de barba elegante</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <!-- Equipo -->
 
-            <section class="team" id="team">
-                <h2>Nuestro equipo</h2>
-                <p>Profesionales apasionados dedicados a brindarte el mejor servicio</p>
-                <div class="team-member">
-                    <img src="barbero1.jpg" alt="Barbero 1" />
-                    <h3>Juan Pérez</h3>
-                    <p>Especialista en cortes modernos y afeitados clásicos.</p>
-                </div>
-                <div class="team-member">
-                    <img src="barbero2.jpg" alt="Barbero 2" />
-                    <h3>María Gómez</h3>
-                    <p>Experta en cuidado de barba y estilos personalizados.</p>
+            <section class="team bg-dark text-white d-flex flex-column align-items-center justify-content-center py-5" id="team">
+                <h2 class="fw-bold fs-1 mb-3">Nuestro equipo</h2>
+                <p class="fs-6 mb-5">Profesionales apasionados dedicados a brindarte el mejor servicio</p>
+                <div class="container">
+                    <div class="row g-4 justify-content-center">
+                        <!-- Miembro 1 -->
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="card h-100 team-member">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" class="card-img-top" alt="Barbero 1" />
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title text-white">Carlos Martínez</h3>
+                                    <span class="text-warning"><i class="fa-light fa-award me-2 text-warning"></i>Maestro Barbero</span>
+                                    <span class="text-gray"><i class="fa-light fa-star me-2 text-warning"></i>15 años de experiencia</span>
+                                    <small class="text-secondary my-3">Cortes clásicos y afeitado tradicional</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Miembro 2 -->
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="card h-100 team-member">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop" class="card-img-top" alt="Barbero 2" />
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title text-white">Diego Sánchez</h3>
+                                    <span class="text-warning"><i class="fa-light fa-award me-2 text-warning"></i>Barbero Senior</span>
+                                    <span class="text-gray"><i class="fa-light fa-star me-2 text-warning"></i>10 años de experiencia</span>
+                                    <small class="text-secondary my-3">Estilos modernos y diseño de barba</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Miembro 3 -->
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="card h-100 team-member">
+                                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop" class="card-img-top" alt="Barbero 3" />
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title text-white">Miguel Rodríguez</h3>
+                                    <span class="text-warning"><i class="fa-light fa-award me-2 text-warning"></i>Barbero</span>
+                                    <span class="text-gray"><i class="fa-light fa-star me-2 text-warning"></i>7 años de experiencia</span>
+                                    <small class="text-secondary my-3">Cortes fade y tratamientos capilares</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <!-- Contacto -->
 
-            <section class="contact" id="contact">
-                <h2>Contáctanos</h2>
-                <p>Reserva tu cita o visítanos sin compromiso</p>
-                <div class="">
-                    <div class="">
-                        <img src="" alt="" />
-                        <div class="">
-                            <h2>Información de Contacto</h2>
-                            <div class="">
-                                <h3>Direccion</h3>
-                                <p>Calle Falsa 123, Ciudad, País</p>
+            <section class="contact d-flex flex-column align-items-center mx-auto" id="contact">
+                <h2 class="fw-bold fs-1">Contáctanos</h2>
+                <p class="fs-6 w-75 text-center">Reserva tu cita o visítanos sin compromiso</p>
+                <div class="container d-flex flex-column flex-lg-row justify-content-between gap-5 my-4">
+                    <div class="contact-info d-flex flex-column gap-4 fit-content">
+                        <h2 class="fw-bold">Información de Contacto</h2>
+                        <div class="d-flex gap-3">
+                            <div class="icon-container d-flex flex-column justify-content-center align-items-center bg-warning rounded-4" style="width: 50px; height: 50px">
+                                <i class="fa-regular fa-location-dot fa-xl"></i>
+                            </div>
+                            <div class="contact-details d-flex flex-column justify-content-center gap-2">
+                                <h3 class="m-0">Direccion</h3>
+                                <p class="m-0 text-secondary">Calle Falsa 123, Ciudad, País</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <div class="icon-container d-flex flex-column justify-content-center align-items-center bg-warning rounded-4" style="width: 50px; height: 50px">
+                                <i class="fa-regular fa-phone fa-xl"></i>
+                            </div>
+                            <div class="contact-details d-flex flex-column justify-content-center gap-2">
+                                <h3 class="m-0">Teléfono</h3>
+                                <p class="m-0 text-secondary">+57 300 123 4567</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <div class="icon-container d-flex flex-column justify-content-center align-items-center bg-warning rounded-4" style="width: 50px; height: 50px">
+                                <i class="fa-regular fa-envelope fa-xl"></i>
+                            </div>
+                            <div class="contact-details d-flex flex-column justify-content-center gap-2">
+                                <h3 class="m-0">Email</h3>
+                                <p class="m-0 text-secondary">info@barbershop.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <div class="icon-container d-flex flex-column justify-content-center align-items-center bg-warning rounded-4" style="width: 50px; height: 50px">
+                                <i class="fa-regular fa-clock fa-xl"></i>
+                            </div>
+                            <div class="contact-details d-flex flex-column justify-content-center gap-2">
+                                <h3 class="m-0">Horario</h3>
+                                <p class="m-0 text-secondary">Lunes a Viernes: 9:00 AM - 8:00 PM</p>
                             </div>
                         </div>
                     </div>
-                    <div class="">
-                        <img src="" alt="" />
-                        <div class="">
-                            <h2>Teléfono</h2>
-                            <div class="">
-                                <h3>Teléfono</h3>
-                                <p>+57 300 123 4567</p>
-                            </div>
-                        </div>
+                    <div class="col-lg-6 contact-form p-4 rounded-2 shadow flex-column d-flex gap-3 bg-light">
+                        <form>
+                            <h2 class="mb-3">Reservar Cita</h2>
+
+                            <p class="mb-1 small fw-semibold">Nombre Completo</p>
+                            <input type="text" placeholder="Tu nombre" required />
+
+                            <p class="mb-1 small fw-semibold">Nombre Completo</p>
+                            <input type="text" placeholder="Tu nombre" required />
+
+                            <p class="mb-1 small fw-semibold">Correo Electrónico</p>
+                            <input type="email" placeholder="Correo electrónico" required />
+
+                            <p class="mb-1 small fw-semibold">Teléfono</p>
+                            <input type="number" placeholder="Teléfono" required />
+
+                            <p class="mb-1 small fw-semibold">Servicio</p>
+                            <select name="servicio" id="servicio" required>
+                                <option value="" disabled selected>Selecciona un servicio</option>
+                                <option value="corte">Corte de cabello</option>
+                                <option value="afeitado">Afeitado tradicional</option>
+                                <option value="arreglo">Arreglo de barba</option>
+                            </select>
+
+                            <p class="mb-1 small fw-semibold">Fecha y Hora</p>
+                            <input type="datetime-local" required />
+
+                            <p class="mb-1 small fw-semibold">Mensaje</p>
+                            <textarea placeholder="Mensaje"></textarea>
+
+                            <button type="submit" class="btn btn-warning py-3 fw-semibold">Confirmar Reserva</button>
+                        </form>
                     </div>
-                    <div class="">
-                        <img src="" alt="" />
-                        <div class="">
-                            <h2>Email</h2>
-                            <div class="">
-                                <h3>Email</h3>
-                                <p>info@barbershop.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="">
-                        <img src="" alt="" />
-                        <div class="">
-                            <h2>Horario</h2>
-                            <div class="">
-                                <h3>Horario</h3>
-                                <p>Lunes a Viernes: 9:00 AM - 8:00 PM</p>
-                            </div>
-                        </div>
-                    </div>
-                    <form>
-                        <input type="text" placeholder="Nombre" required />
-                        <input type="email" placeholder="Correo electrónico" required />
-                        <input type="number" placeholder="Teléfono" required />
-                        <select name="servicio" id="servicio" required>
-                            <option value="" disabled selected>Selecciona un servicio</option>
-                            <option value="corte">Corte de cabello</option>
-                            <option value="afeitado">Afeitado tradicional</option>
-                            <option value="arreglo">Arreglo de barba</option>
-                        </select>
-                        <input type="datetime-local" required />
-                        <textarea placeholder="Mensaje"></textarea>
-                        <button type="submit">Confirmar Reserva</button>
-                    </form>
                 </div>
             </section>
         </main>
 
         <!-- Footer -->
 
-        <footer>
-            <div class="footer-content">
-                <div>
-                    <h2>BarberShop</h2>
-                    <p>Tu barbería de confianza desde 2004. Tradición y modernidad en cada corte.</p>
-                </div>
-                <div class="nav-footer">
-                    <h3>Enlaces Rápidos</h3>
-                    <a href="#">Inicio</a>
-                    <a href="#">Servicios</a>
-                    <a href="#">Galería</a>
-                    <a href="#">Equipo</a>
-                    <a href="#">Contacto</a>
-                </div>
-                <div class="social-media">
-                    <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
-                    <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
-                    <a href="#"><img src="twitter-icon.png" alt="Twitter" /></a>
+        <footer class="pt-4 mt-5">
+            <div class="footer-content container gap-5 py-4">
+                <div class="row g-4 justify-content-between">
+                    <div class="footer-info d-flex flex-column gap-3 col-12 col-lg-6 align-items-center align-items-lg-start">
+                        <!-- Logo -->
+                        <div class="d-flex align-items-center gap-2" id="logo">
+                            <a href="#hero" class="d-flex align-items-center gap-2 text-decoration-none text-white">
+                                <i class="fa-light fa-scissors fa-xl text-warning"></i>
+                                <span class="m-0 fs-2 fw-bold">BarberShop</span>
+                            </a>
+                        </div>
+                        <p class="text-gray text-center text-lg-start">Tu barbería de confianza desde 2004. Tradición y modernidad en cada corte.</p>
+                    </div>
+                    <div class="nav-footer d-flex flex-column gap-2 col-12 col-lg-3 align-items-center align-items-lg-start">
+                        <h3 class="text-white">Enlaces Rápidos</h3>
+                        <div class="d-flex flex-lg-column gap-2">
+                            <a href="#hero" class="text-gray">Inicio</a>
+                            <a href="#servicios" class="text-gray">Servicios</a>
+                            <a href="#galeria" class="text-gray">Galería</a>
+                            <a href="#equipo" class="text-gray">Equipo</a>
+                            <a href="#contacto" class="text-gray">Contacto</a>
+                        </div>
+                    </div>
+                    <div class="social-media d-flex flex-column gap-3 col-12 col-lg-3 align-items-center align-items-lg-start">
+                        <h3 class="text-white">Síguenos</h3>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="text-decoration-none">
+                                <div class="icon-container d-flex flex-column justify-content-center align-items-center rounded-4" style="width: 50px; height: 50px">
+                                    <i class="fa-brands fa-facebook-f text-white"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <div class="icon-container d-flex flex-column justify-content-center align-items-center rounded-4" style="width: 50px; height: 50px">
+                                    <i class="fa-brands fa-instagram text-white"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <div class="icon-container d-flex flex-column justify-content-center align-items-center rounded-4" style="width: 50px; height: 50px">
+                                    <i class="fa-brands fa-twitter text-white"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2026 BarberShop. Todos los derechos reservados.</p>
+            <div class="copyright text-secondary d-flex justify-content-center align-items-center py-4">
+                <p class="m-0 text-center">&copy; 2026 BarberShop. Todos los derechos reservados.</p>
             </div>
         </footer>
 
