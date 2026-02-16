@@ -301,21 +301,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 contact-form p-4 rounded-2 shadow flex-column d-flex gap-3 bg-light" id="reserve">
-                        <form>
+                    <div class="col-lg-6 d-flex justify-content-center gap-3" id="reserve">
+                        <form id="reservaForm" class="contact-form shadow rounded-2 d-flex flex-column bg-light">
                             <h2 class="mb-3">Reservar Cita</h2>
 
                             <p class="mb-1 small fw-semibold">Nombre Completo</p>
-                            <input type="text" placeholder="Tu nombre" required />
-
-                            <p class="mb-1 small fw-semibold">Nombre Completo</p>
-                            <input type="text" placeholder="Tu nombre" required />
+                            <input type="text" name="nombre" placeholder="Tu nombre" required />
 
                             <p class="mb-1 small fw-semibold">Correo Electrónico</p>
-                            <input type="email" placeholder="Correo electrónico" required />
+                            <input type="email" name="correo" placeholder="Correo electrónico" required />
 
                             <p class="mb-1 small fw-semibold">Teléfono</p>
-                            <input type="number" placeholder="Teléfono" required />
+                            <input type="number" name="telefono" placeholder="Teléfono" required />
 
                             <p class="mb-1 small fw-semibold">Servicio</p>
                             <select name="servicio" id="servicio" required>
@@ -326,10 +323,10 @@
                             </select>
 
                             <p class="mb-1 small fw-semibold">Fecha y Hora</p>
-                            <input type="datetime-local" required />
+                            <input type="datetime-local" name="fecha" required />
 
                             <p class="mb-1 small fw-semibold">Mensaje</p>
-                            <textarea placeholder="Mensaje"></textarea>
+                            <textarea name="mensaje" placeholder="Mensaje"></textarea>
 
                             <button type="submit" class="btn btn-warning py-3 fw-semibold">Confirmar Reserva</button>
                         </form>
@@ -359,8 +356,8 @@
                             <a href="#hero" class="text-gray">Inicio</a>
                             <a href="#servicios" class="text-gray">Servicios</a>
                             <a href="#galeria" class="text-gray">Galería</a>
-                            <a href="#equipo" class="text-gray">Equipo</a>
-                            <a href="#contacto" class="text-gray">Contacto</a>
+                            <a href="#team" class="text-gray">Equipo</a>
+                            <a href="#contact" class="text-gray">Contacto</a>
                         </div>
                     </div>
                     <div class="social-media d-flex flex-column gap-3 col-12 col-lg-3 align-items-center align-items-lg-start">

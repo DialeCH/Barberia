@@ -104,6 +104,14 @@ form textarea {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Contacto */
+
+.contact-form {
+    padding: 50px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
 /* Footer */
 
 footer {
