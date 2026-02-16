@@ -26,3 +26,18 @@ async def listar_citas(db=Depends(get_db)):
         cita["_id"] = str(cita["_id"])
         citas.append(cita)
     return citas
+
+@router.get("/{nombre}")
+async def obtener_cita(nombre: str, db=Depends(get_db)):
+    cita = await db.citas.find_one({"nombre": nombre})
+    if cita:
+        cita["_id"] = str(cita["_id"])
+        return cita
+    return {"mensaje": "Cita no encontrada"}
+
+@router.delete("/{nombre}")
+async def eliminar_cita(nombre: str, db=Depends(get_db)):
+    result = await db.citas.delete_one({"nombre": nombre})
+    if result.deleted_count:
+        return {"mensaje": "Cita eliminada con éxito"}
+    return {"mensaje": "Cita no encontrada"}
